@@ -1,0 +1,15 @@
+{
+  "name": "pathpilot-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multilingual career guidance prototype for students choosing their first job role.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check api/watson.js && node --check netlify/functions/watson.mjs && node test/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

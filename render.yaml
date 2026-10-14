@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: pathpilot-ai
+    runtime: node
+    plan: free
+    buildCommand: ""
+    startCommand: npm start
+    healthCheckPath: /api/status
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: WATSON_ASSISTANT_URL
+        sync: false
+      - key: WATSON_ASSISTANT_ID
+        sync: false
+      - key: WATSON_API_KEY
+        sync: false
