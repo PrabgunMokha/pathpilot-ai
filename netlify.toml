@@ -1,13 +1,3 @@
 [build]
-  publish = "public"
-  functions = "netlify/functions"
-
-[[redirects]]
-  from = "/api/status"
-  to = "/.netlify/functions/status"
-  status = 200
-
-[[redirects]]
-  from = "/api/watson/message"
-  to = "/.netlify/functions/watson"
-  status = 200
+  publish = "."
+  
